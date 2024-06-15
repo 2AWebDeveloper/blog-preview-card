@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,500;1,500&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,800;1,800&display=swap');
+
+:root {
+    --primary: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 50%);
+    --Black: hsl(0, 0%, 7%);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+body {
+    font-family: "Figtree", sans-serif;
+    font-size: 1rem;
+    line-height: 1.4;
+}
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: var(--primary);
+    padding: 1.25rem;
+}
+.post {
+    max-width: 384px;
+    padding: 1.5rem;
+    background-color: var(--White);
+    color: var(--Black);
+    border: 1px solid var(--Black);
+    border-radius: 20px;
+    filter: drop-shadow(8px 8px 0px var(--Black));
+}
+.post__img img {
+   width: 100%; 
+   border-radius: 10px;  
+}
+.post__content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 0.75rem;
+    margin: 1rem 0 1.5rem;
+}
+.post__category {
+    background-color: var(--primary);
+    padding: 0.313rem 0.75rem;
+    border-radius: 4px;
+    font-weight: 800;
+    font-size: 0.875rem;
+}
+.post__date {
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+.post__title {
+    font-size: 1.5rem;
+    transition: all 0.2s ease;
+}
+.post__title:hover {
+    color: var(--primary);
+}
+.post__description {
+    color: var(--Grey);
+}
+.post__author {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 0.75rem;
+}
+.author__avatar {
+    width: 2rem;
+    height: 2rem;
+}
+.author__name {
+    font-size: 0.875rem;
+    font-weight: 800;
+}
